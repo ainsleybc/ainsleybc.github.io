@@ -1,0 +1,70 @@
+html {
+  font-family: "Open Sans", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(89, 89, 89);
+}
+
+.header {
+  height: 100vh;
+  background: linear-gradient(
+    -180deg,
+    rgba(255, 135, 122, 0.6) 0%,
+    rgba(255, 135, 122, 0.4) 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.title {
+  font-family: "Bebas Neue", cursive;
+  text-transform: lowercase;
+  font-size: 3em;
+  color: #41404c;
+  letter-spacing: 0.15em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.subtitle {
+  color: rgba(65, 64, 76, 0.7);
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.icons {
+  height: 50px;
+  overflow: hidden;
+  margin: 50px 0 auto;
+  text-align: center;
+}
+
+.icons svg {
+  height: 100%;
+  display: inline-block;
+  width: 50px;
+  margin: 0 10px;
+}
