@@ -1,3 +1,9 @@
+/*
+colosr:
+blue: 65, 64, 76
+terracotta: 255, 135, 122
+*/
+
 html {
   font-family: "Open Sans", sans-serif;
   -ms-text-size-adjust: 100%;
@@ -17,18 +23,14 @@ body {
   box-sizing: border-box;
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
-  color: rgb(89, 89, 89);
+  color: #fff;
 }
 
 .header {
   height: 100vh;
-  background: linear-gradient(
-    -180deg,
-    rgba(255, 135, 122, 0.6) 0%,
-    rgba(255, 135, 122, 0.4) 100%
-  );
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  background-color: rgba(65, 64, 76, 1);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 150px), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 150px), 0 100%);
 }
 
 .header > div {
@@ -42,14 +44,12 @@ body {
   font-family: "Bebas Neue", cursive;
   text-transform: lowercase;
   font-size: 3em;
-  color: #41404c;
   letter-spacing: 0.15em;
   text-align: center;
   font-weight: 400;
 }
 
 .subtitle {
-  color: rgba(65, 64, 76, 0.7);
   text-align: center;
   font-size: 1.5em;
   margin-top: 10px;
@@ -67,4 +67,22 @@ body {
   display: inline-block;
   width: 50px;
   margin: 0 10px;
+}
+
+.content {
+  max-width: 600px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.skills {
+  height: 700px;
+  background-color: rgb(255, 135, 122);
+  margin-top: -150px;
+  clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 calc(100% - 150px));
+  -webkit-clip-path: polygon(0 150px, 100% 0, 100% 100%, 0 calc(100% - 150px));
+}
+
+.company-logo {
+  height: 100px;
 }
