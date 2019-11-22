@@ -1,10 +1,8 @@
-/*
-colosr:
-blue: 65, 64, 76
-terracotta: 255, 135, 122
-grey #eee
-light grey #f9f9f9
-*/
+:root {
+  --navy: #41404c;
+  --gray: #eee;
+  --terracotta: #ff877a;
+}
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -25,12 +23,12 @@ body {
   box-sizing: border-box;
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
-  color: rgb(65, 64, 76);
+  color: var(--navy);
 }
 
 .header {
   height: 95vh;
-  background-color: rgba(65, 64, 76, 1);
+  background-color: var(--navy);
 }
 
 .header > div {
@@ -80,7 +78,7 @@ body {
 
 .skills {
   height: 400px;
-  background-color: rgb(255, 135, 122);
+  background-color: var(--terracotta);
 }
 
 .work-history {
@@ -98,7 +96,7 @@ body {
   right: calc(50% - 55px);
   border: medium solid #fff;
   border-width: 55px 55px 55px 55px;
-  border-color: #ff877a transparent transparent transparent;
+  border-color: var(--terracotta) transparent transparent transparent;
 }
 
 .timeline {
@@ -110,7 +108,7 @@ body {
   content: "";
   position: absolute;
   width: 4px;
-  background-color: rgba(255, 135, 122, 1);
+  background-color: var(--terracotta);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -143,7 +141,7 @@ body {
   width: 20px;
   height: 20px;
   right: -10px;
-  background-color: rgba(255, 135, 122, 1);
+  background-color: var(--terracotta);
   top: 21px;
   border-radius: 50%;
   z-index: 1;
