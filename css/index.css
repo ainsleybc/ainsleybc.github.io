@@ -72,7 +72,7 @@ body {
 }
 
 .content {
-  max-width: 800px;
+  max-width: 960px;
   margin: 0 auto;
   list-style: none;
   padding: 0;
@@ -81,24 +81,21 @@ body {
 .skills {
   height: 400px;
   background-color: rgb(var(--gray));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages__logo {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
 }
 
 .work-history {
   background-color: rgb(var(--purple));
   padding: 50px 15px;
   position: relative;
-}
-
-.work-history::before {
-  content: " ";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0px;
-  left: 16px;
-  border: medium solid #fff;
-  border-width: 30px 30px 30px 30px;
-  border-color: rgb(var(--gray)) transparent transparent transparent;
 }
 
 .timeline {
