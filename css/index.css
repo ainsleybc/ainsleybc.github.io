@@ -75,26 +75,31 @@ body {
   max-width: 960px;
   margin: 0 auto;
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
 }
 
 .skills {
-  height: 400px;
   background-color: rgb(var(--gray));
+}
+
+.languages {
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .languages__logo {
   width: 150px;
   height: 150px;
   margin: 20px;
+  flex: 0 0 auto;
 }
 
 .work-history {
   background-color: rgb(var(--purple));
-  padding: 50px 15px;
+  padding: 80px 0;
   position: relative;
 }
 
@@ -108,12 +113,18 @@ body {
   position: absolute;
   width: 4px;
   background-color: rgb(var(--gray));
-  background: linear-gradient(-180deg, rgba(var(--gray), 1) 50%, rgba(var(--gray), 0) 100%);
-  top: -25px;
+  background: linear-gradient(
+    -180deg,
+    rgba(var(--gray), 0) 0%,
+    rgba(var(--gray), 0.5) 10%,
+    rgba(var(--gray), 0.5) 90%,
+    rgba(var(--gray), 0) 100%
+  );
+  top: -50px;
   bottom: 0;
-  left: 31px;
+  left: 2px;
   margin-left: -2px;
-  height: calc(100% + 50px);
+  height: calc(100% + 100px);
 }
 
 /* timeline card container */
@@ -124,7 +135,8 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 10px 25px 10px 70px;
+  padding: 10px;
+  padding-right: 0;
   left: 0;
 }
 
@@ -132,9 +144,9 @@ body {
 .timeline__container::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 21px;
+  width: 16px;
+  height: 16px;
+  left: -26px;
   background-color: rgb(var(--gray));
   top: 21px;
   border-radius: 50%;
@@ -150,8 +162,8 @@ body {
   height: 0;
   width: 0;
   position: absolute;
-  top: 22px;
-  left: 60px;
+  top: 20px;
+  left: 0;
   z-index: 1;
 }
 
@@ -197,6 +209,10 @@ body {
 }
 
 @media screen and (min-width: 800px) {
+  .work-history {
+    padding: 100px 0;
+  }
+
   /* Fix funnel sizing & positioning */
   .work-history::before {
     left: unset;
@@ -236,12 +252,12 @@ body {
   /* Position left circles correctly */
   .timeline__container.left::after {
     left: unset;
-    right: -10px;
+    right: -8px;
   }
 
   /* Position right circles correctly */
   .timeline__container.right::after {
-    left: -10px;
+    left: -8px;
   }
 
   .timeline__card {
