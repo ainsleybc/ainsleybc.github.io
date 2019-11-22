@@ -8,7 +8,7 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -25,7 +25,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
-  font-family: "Montserrat", sans-serif;
   color: rgb(var(--navy));
 }
 
@@ -162,7 +161,7 @@ body {
 /* timeline card */
 .timeline__card {
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
-  padding: 20px 30px;
+  padding: 20px;
   background-color: rgb(var(--gray));
   position: relative;
   border-radius: 2px;
@@ -170,6 +169,10 @@ body {
   height: 100%;
   width: 100%;
   align-items: center;
+}
+
+.timeline__card--text {
+  flex: 1 1 auto;
 }
 
 .timeline__card--text p:first-child {
@@ -190,9 +193,10 @@ body {
 }
 
 .timeline__card--logo {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 60px;
   margin-left: 10px;
+  flex: 0 0 auto;
 }
 
 @media screen and (min-width: 800px) {
@@ -241,6 +245,15 @@ body {
   /* Position right circles correctly */
   .timeline__container.right::after {
     left: -10px;
+  }
+
+  .timeline__card {
+    padding: 20px 30px;
+  }
+
+  .timeline__card--logo {
+    height: 100px;
+    width: 100px;
   }
 }
 
