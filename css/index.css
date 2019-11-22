@@ -1,8 +1,10 @@
 :root {
-  --navy: #41404c;
-  --terracotta: #ff877a;
-  --gray: #eee;
-  --light-gray: #f9f9f9;
+  --blue: 205, 231, 236;
+  --navy: 82, 97, 117;
+  --purple: 110, 97, 153;
+  --gold: 186, 151, 87;
+  --gray: 243, 243, 236;
+  --light-gray: 244, 244, 233;
 }
 
 html {
@@ -24,12 +26,12 @@ body {
   box-sizing: border-box;
   font-size: 100%;
   font-family: "Montserrat", sans-serif;
-  color: var(--navy);
+  color: rgb(var(--navy));
 }
 
 .header {
   height: 95vh;
-  background-color: var(--navy);
+  background-color: rgb(var(--navy));
 }
 
 .header > div {
@@ -53,7 +55,7 @@ body {
   text-align: center;
   font-size: 1.5em;
   margin-top: 10px;
-  color: #fff;
+  color: rgb(var(--light-gray));
 }
 
 .icons {
@@ -79,11 +81,11 @@ body {
 
 .skills {
   height: 400px;
-  background-color: var(--terracotta);
+  background-color: rgb(var(--gray));
 }
 
 .work-history {
-  background-color: #eee;
+  background-color: rgb(var(--purple));
   padding: 50px 15px;
   position: relative;
 }
@@ -97,7 +99,7 @@ body {
   left: 16px;
   border: medium solid #fff;
   border-width: 30px 30px 30px 30px;
-  border-color: var(--terracotta) transparent transparent transparent;
+  border-color: rgb(var(--gray)) transparent transparent transparent;
 }
 
 .timeline {
@@ -109,7 +111,8 @@ body {
   content: "";
   position: absolute;
   width: 4px;
-  background-color: var(--terracotta);
+  background-color: rgb(var(--gray));
+  background: linear-gradient(-180deg, rgba(var(--gray), 1) 50%, rgba(var(--gray), 0) 100%);
   top: -25px;
   bottom: 0;
   left: 31px;
@@ -136,7 +139,7 @@ body {
   width: 20px;
   height: 20px;
   left: 21px;
-  background-color: var(--terracotta);
+  background-color: rgb(var(--gray));
   top: 21px;
   border-radius: 50%;
   z-index: 1;
@@ -147,7 +150,7 @@ body {
   content: " ";
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent var(--light-gray) transparent transparent;
+  border-color: transparent rgb(var(--gray)) transparent transparent;
   height: 0;
   width: 0;
   position: absolute;
@@ -160,7 +163,7 @@ body {
 .timeline__card {
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
   padding: 20px 30px;
-  background-color: var(--light-gray);
+  background-color: rgb(var(--gray));
   position: relative;
   border-radius: 2px;
   display: flex;
@@ -226,7 +229,7 @@ body {
     left: unset;
     right: 30px;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--light-gray);
+    border-color: transparent transparent transparent rgb(var(--light-gray));
   }
 
   /* Position left circles correctly */
@@ -239,4 +242,18 @@ body {
   .timeline__container.right::after {
     left: -10px;
   }
+}
+
+.footer {
+  height: 70px;
+  background-color: rgb(var(--gold));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  color: rgb(var(--navy));
+  font-weight: 600;
+  letter-spacing: 0.1em;
 }
