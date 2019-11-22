@@ -1,7 +1,8 @@
 :root {
   --navy: #41404c;
-  --gray: #eee;
   --terracotta: #ff877a;
+  --gray: #eee;
+  --light-gray: #f9f9f9;
 }
 
 html {
@@ -93,9 +94,9 @@ body {
   height: 0;
   position: absolute;
   top: 0px;
-  right: calc(50% - 55px);
+  left: 16px;
   border: medium solid #fff;
-  border-width: 55px 55px 55px 55px;
+  border-width: 30px 30px 30px 30px;
   border-color: var(--terracotta) transparent transparent transparent;
 }
 
@@ -109,10 +110,11 @@ body {
   position: absolute;
   width: 4px;
   background-color: var(--terracotta);
-  top: 0;
+  top: -25px;
   bottom: 0;
   left: 31px;
   margin-left: -2px;
+  height: calc(100% + 50px);
 }
 
 /* timeline card container */
@@ -145,7 +147,7 @@ body {
   content: " ";
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f9f9f9 transparent transparent;
+  border-color: transparent var(--light-gray) transparent transparent;
   height: 0;
   width: 0;
   position: absolute;
@@ -158,7 +160,7 @@ body {
 .timeline__card {
   box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
   padding: 20px 30px;
-  background-color: #f9f9f9;
+  background-color: var(--light-gray);
   position: relative;
   border-radius: 2px;
   display: flex;
@@ -191,6 +193,13 @@ body {
 }
 
 @media screen and (min-width: 800px) {
+  /* Fix funnel sizing & positioning */
+  .work-history::before {
+    left: unset;
+    right: calc(50% - 50px);
+    border-width: 50px 50px 50px 50px;
+  }
+
   /* Place the timelime to the left */
   .timeline::after {
     left: 50%;
@@ -217,7 +226,7 @@ body {
     left: unset;
     right: 30px;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #f9f9f9;
+    border-color: transparent transparent transparent var(--light-gray);
   }
 
   /* Position left circles correctly */
