@@ -1,6 +1,7 @@
 :root {
   --blue: 205, 231, 236;
-  --navy: 61, 73, 87;
+  --navy: 82, 97, 117;
+  --dark-navy: 61, 73, 87;
   --purple: 110, 97, 153;
   --gold: 186, 151, 87;
   --gray: 243, 243, 236;
@@ -298,7 +299,7 @@ body {
 }
 
 .footer p {
-  color: rgb(var(--navy));
+  color: rgb(var(--dark-navy));
   font-weight: 600;
   letter-spacing: 0.1em;
 }
