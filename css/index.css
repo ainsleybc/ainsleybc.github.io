@@ -1,6 +1,6 @@
 :root {
   --blue: 205, 231, 236;
-  --navy: 82, 97, 117;
+  --navy: 61, 73, 87;
   --purple: 110, 97, 153;
   --gold: 186, 151, 87;
   --gray: 243, 243, 236;
@@ -291,14 +291,14 @@ body {
 
 .footer {
   height: 70px;
-  background-color: rgb(var(--gold));
+  background-color: rgb(var(--blue));
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer p {
-  color: rgb(var(--light-gray));
+  color: rgb(var(--navy));
   font-weight: 600;
   letter-spacing: 0.1em;
 }
