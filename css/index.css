@@ -209,13 +209,13 @@ body {
 }
 
 .timeline__card--text p:nth-child(2) {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 400;
   margin-top: 5px;
 }
 
 .timeline__card--text p:last-child {
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 600;
   margin-top: 20px;
 }
@@ -298,7 +298,7 @@ body {
 }
 
 .footer p {
-  color: rgb(var(--navy));
+  color: rgb(var(--light-gray));
   font-weight: 600;
   letter-spacing: 0.1em;
 }
