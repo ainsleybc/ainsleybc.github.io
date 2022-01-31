@@ -251,18 +251,18 @@ body {
     padding: 10px 40px;
   }
 
-  /* Put right containers on the right */
-  .timeline__container.right {
+  /* Put even containers on the right */
+  .timeline__container:nth-child(even) {
     left: 50%;
   }
 
   /* Position right arrows correctly */
-  .timeline__container.right::before {
+  .timeline__container:nth-child(even)::before {
     left: 30px;
   }
 
   /* Make left arrows behave correctly */
-  .timeline__container.left::before {
+  .timeline__container:nth-child(odd)::before {
     left: unset;
     right: 30px;
     border-width: 10px 0 10px 10px;
@@ -270,13 +270,13 @@ body {
   }
 
   /* Position left circles correctly */
-  .timeline__container.left::after {
+  .timeline__container:nth-child(odd)::after {
     left: unset;
     right: -8px;
   }
 
   /* Position right circles correctly */
-  .timeline__container.right::after {
+  .timeline__container:nth-child(even)::after {
     left: -8px;
   }
 
